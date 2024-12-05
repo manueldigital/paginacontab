@@ -1,0 +1,160 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #343a40;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffffff !important;
+}
+.nav-link {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  animation: fadeIn 2s ease-in-out;
+}
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+.animate-fade-in-delay {
+  animation: fadeIn 2s ease-in-out;
+  animation-delay: 1s;
+}
+
+/* Servicios */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+/* Beneficios */
+.benefit-item {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+.benefit-item h5 {
+  font-size: 1.25rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+.benefit-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+/* Contacto */
+#contacto {
+  background: #343a40;
+  color: #ffffff;
+}
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.address h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffc107;
+}
+.address p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+.address a.btn {
+  margin-top: 15px;
+}
+
+/* Formulario */
+.form-glass {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.form-glass label {
+  color: #6c757d;
+}
+.form-glass .btn {
+  background: #007bff;
+  border: none;
+}
+.form-glass .btn:hover {
+  background: #0056b3;
+}
+
+/* Botón de WhatsApp */
+.btn-success {
+  background: #28a745 !important;
+  border: none;
+}
+.btn-success:hover {
+  background: #218838 !important;
+}
+
+/* Adaptación responsiva */
+@media (max-width: 768px) {
+  #contacto .row {
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
